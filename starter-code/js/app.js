@@ -23,6 +23,10 @@ app.controller('FruitVeggiesCtrl',['$scope',function($scope) {
     'Banana'
   ]
 
+  $scope.fruitCol = [];
+  $scope.vegCol = [
+  ]
+
 }])
 console.log('App Started');
 console.log('Fruit count', fruit.length);
