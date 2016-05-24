@@ -2,3 +2,12 @@
 .align {
   text-align: center;
 }
+
+.right-float {
+  float: right;
+  margin-top:-2em;
+}
+
+.left-float {
+  float: left;
+}

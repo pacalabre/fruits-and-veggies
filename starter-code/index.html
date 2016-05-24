@@ -15,33 +15,32 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h3>Fruit</h3>
-                    <div ng-repeat="food in fruitAndVeg">
-                        <div class="well align">
-                            <button class="btn-primary"> <-- </button>
-                                {{food}}
-                            <button class="btn-primary"> --></button>
+                    <div ng-repeat="food in fruitCol track by $index">
+                        <div class="well align ">
+                               <p> {{food}} </p>
+                            <button class="btn-primary right-float" ng-click="toPool(food)"> --> </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4" >
                     <h3>Pool</h3>
-                    <div ng-repeat="food in fruitAndVeg">
-                        <div class="well align">
-                            <button class="btn-primary"> <-- </button>
-                                {{food}}
-                            <button class="btn-primary"> --> </button>
+                    <div ng-repeat="food in fruitAndVeg track by $index">
+                        <div class="well align ">
+                            <button class="btn-primary left-float" ng-click="toFruit(food)"> <-- </button>
+                                <p> {{food}} </p>
+                            <button class="btn-primary right-float" ng-click="toVeg(food)"> --> </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <h3>Veggies</h3>
-                    <div ng-repeat="food in fruitAndVeg">
-                        <div class="well align">
-                            <button class="btn-primary"> <-- </button>
-                                {{food}}
-                            <button class="btn-primary"> --></button>
+                    <div ng-repeat="food in vegCol track by $index">
+                        <div class="well align ">
+                            <button class="btn-primary left-float" ng-click="toPool(food)"> <-- </button>
+                               <p> {{food}} </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
