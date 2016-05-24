@@ -11,3 +11,7 @@
 .left-float {
   float: left;
 }
+
+.wrong {
+  background-color: red;
+}
