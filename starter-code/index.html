@@ -18,7 +18,7 @@
                     <div ng-repeat="food in fruitCol track by $index">
                         <div class="well align ">
                                <p> {{food}} </p>
-                            <button class="btn-primary right-float" ng-click="toPool(food)"> --> </button>
+                            <button class="btn-primary right-float" ng-click="fruitToPool(food)"> --> </button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <h3>Veggies</h3>
                     <div ng-repeat="food in vegCol track by $index">
                         <div class="well align ">
-                            <button class="btn-primary left-float" ng-click="toPool(food)"> <-- </button>
+                            <button class="btn-primary left-float" ng-click="vegToPool(food)"> <-- </button>
                                <p> {{food}} </p>
                         </div>
                     </div>

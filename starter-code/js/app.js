@@ -9,13 +9,22 @@ app.controller('FruitVeggiesCtrl',['$scope',function($scope) {
     $scope.fruitCol.push(food);
   }
 
-  $scope.toPool = function(food) {
-    var arrInd = $scope.fruitAndVeg.indexOf(food);
-    var arrSpl = $scope.fruitAndVeg.splice(arrInd,1);
+  $scope.vegToPool = function(food) {
+    console.log(food);
+    var arrInd = $scope.vegCol.indexOf(food);
+    var arrSpl = $scope.vegCol.splice(arrInd,1);
+    $scope.fruitAndVeg.push(food);
+  }
+
+  $scope.fruitToPool = function(food) {
+    console.log(food);
+    var arrInd = $scope.fruitCol.indexOf(food);
+    var arrSpl = $scope.fruitCol.splice(arrInd,1);
     $scope.fruitAndVeg.push(food);
   }
 
   $scope.toVeg = function(food) {
+    console.log(food);
     var arrInd = $scope.fruitAndVeg.indexOf(food);
     var arrSpl = $scope.fruitAndVeg.splice(arrInd,1);
     $scope.vegCol.push(food);
