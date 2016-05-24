@@ -16,7 +16,7 @@
                 <div class="col-sm-4">
                     <h3>Fruit</h3>
                     <div ng-repeat="food in fruitCol track by $index">
-                        <div class="well align" ng-class="{'wrong': wrong}">
+                        <div class="well align" ng-class="{'wrong': wrongFruit[$index]}">
                                <p> {{food}} </p>
                             <button class="btn-primary right-float" ng-class="wrong" ng-click="fruitToPool(food)"> --> </button>
                         </div>
@@ -35,7 +35,7 @@
                 <div class="col-sm-4">
                     <h3>Veggies</h3>
                     <div ng-repeat="food in vegCol track by $index">
-                        <div class="well align" ng-class="{'wrong': wrong}">
+                        <div class="well align" ng-class="{'wrong': wrongVeg[$index]}">
                             <button class="btn-primary left-float"  ng-click="vegToPool(food)"> <-- </button>
                                <p> {{food}} </p>
                         </div>
